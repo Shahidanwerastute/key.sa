@@ -1,0 +1,940 @@
+// Core variables and mixins
+
+@import "variables";
+@import "mixins";
+@import "normalize";
+@import "common";
+
+@font-face {
+  font-family: 'DroidArabicKufi-Regular';
+  src:url("../fonts/DroidArabicKufi_gdi.eot");
+  src:url("../fonts/DroidArabicKufi_gdi.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/DroidArabicKufi_gdi.woff") format("woff"),
+  url("../fonts/DroidArabicKufi_gdi.ttf") format("truetype"),
+  url("../fonts/DroidArabicKufi_gdi.svg#DroidArabicKufi-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-FEFC;
+}
+
+
+body.arb {
+  direction: rtl;
+  font-family: 'DroidArabicKufi-Regular';
+  line-height: 1.5;
+  p {line-height: 1.5}
+
+  * {
+    font-family: 'DroidArabicKufi-Regular' !important;
+    line-height: 1.5;
+
+  }
+  #old_records {
+    .table {
+       th,td {
+         text-align: $right;
+       }
+    }
+    .printBtn {
+      .edBtn {
+        background-position: #{$right} 10px center;
+      }
+    }
+  }
+  .myProfDetail.mpd ul.head li p {
+    font-size: 18px;
+  }
+  #header .logo:after, .contactInfo:after, .contactInfo:before, .hmMJSlider, .hmMJSlider .carouselWrap .carousel .carousel-inner .caption-inner {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+  input.calender {background-position: 3px center}
+  .fileUploader {
+    .showFileName {padding-left: 90px; padding-right: 10px;}
+    .showFileType {left: 8px; right: auto;}
+  }
+  .modal-header {
+    background-position: right center;
+    padding: 15px 42px 15px 24px;
+    .modal-title {text-align: right;}
+    .close {left: 0; right: auto;}
+  }
+  .noFloatingRow .isNoFloat {
+    float: none;
+  }
+  header .logoMenuTop .menuRight ul.nav > li{
+    font-size: 14px;
+  }
+  header .topHeader .topLang > a.changeLanguage{
+    font-family: 'latoregular' !important;
+  }
+  .intl-tel-input .phone{
+    direction: ltr;
+   /* text-align: right; */ }
+  footer .footerLinks ul li{
+    font-size: 12px;
+  }
+  .mapPopUp a.printBtn{
+    float: right;
+  }
+  /*========== Float Left Item  =============*/
+
+
+  header .topHeader .topLang,
+  header .topHeader .topLang > a,
+  .mapPopUp .rightPU
+  {float: $left;}
+  .pull-right {
+    float: $left !important;
+  }
+
+  section.homeSlider .carousel .carousel-inner > .item .carousel-caption .container
+  {text-align: $left;}
+
+
+  /*========== Float Right Item =============*/
+
+
+  header .topHeader .topHleft,
+  .navbar-header,
+  header .topHeader .topHleft ul li,
+  .searchBarSec .serFormArea > ul li,
+  .intro .img-holder,
+  .intro .desc,
+  .intro .bookRefHome,
+  .three-colHome .col > div.latestOfferSl .carousel .carousel-indicators li,
+  .social-block .col,
+  .searchBarSec .serFormArea .fleetDropDown .dropMapLoc,
+  .mapPopUp .leftPU
+  {float: $right;}
+  .pull-left {
+    float: $right !important;
+  }
+  header .logoMenuTop .menuRight ul.nav > li.hasDropEd .dropDownEd ul li,
+  section.homeSlider .carousel .carousel-inner > .item .carousel-caption .container > div
+  {text-align: $right;}
+
+
+
+  /*=========== Floating END    =============*/
+  header .logoMenuTop .menuRight,
+  header .logoMenuTop .menuRight ul.nav > li.hasDropEd .dropDownEd,
+  .searchBarSec .serFormArea > ul > li.submitBtn,
+  .three-colHome .col .capWithOffer .offerBox
+  {left: 0; right: auto; }
+  .hasDropEd .dropDownEd {left: auto; right: 0;}
+  header .logoMenuTop .menuRight ul.nav > li.hasDropEd .dropDownEd .menuIconT {left: 25px; right: auto; }
+  .searchBarSec .serText_1 {left: auto; right: 20px;}
+  .searchBarSec .serFormArea {padding: 0 0 0 85px;}
+  .searchBarSec .serFormArea > ul li input {float: right;background-position: 5px center;padding: 0 10px 0 25px;}
+  .searchBarSec .serFormArea > ul li.submitBtn input {
+
+    padding: 0 10px; background-position: center;
+  }
+  .searchBarSec .serFormArea .fleetDropDown {
+    left: 0; right: 0;
+    .locaListFix {
+      float: right;
+      h3, a {padding-right: 45px; padding-left: 15px;}
+    }
+
+    .searchBarSec .serFormArea > ul > li.submitBtn {
+      padding: 0;
+      input {background-position: center center}
+    }
+  }
+  .three-colHome .col > div.latestOfferSl > .capWithOffer {padding: 0 0 0 75px;}
+  header .topHeader .topLang span {
+    padding-left: 10px;
+    padding-right: 0;
+    text-align: $left;
+    font-size: 10px;
+    letter-spacing: 0;
+    margin-top: 15px;
+  }
+  header .topHeader .topLang span br{ display: none;}
+  .three-colHome .col > div.latestOfferSl .carousel .carousel-indicators {left: auto; right: 30px;}
+  .social-block .col {
+    ul {
+      text-align: right;
+      li {margin: 0 0 0 10px}
+    }
+    &:nth-child(1) {padding-right: 0; padding-left: 30px;}
+    &:nth-child(3) {padding-right: 30px; padding-left: 0;}
+    .newsLetter {
+      input.btn-contact {right: auto; left: 0;}
+      input[type="email"] {padding: 0 30px 0 145px;}
+    }
+    &:after {right: 0; left: auto;}
+    .contact-details {
+      .btn-contact {min-width: 130px; float: left}
+      .or {margin: 0 0 0 4px;}
+    }
+  }
+  footer .footerLinks {
+    ul {padding: 0 320px 0 0;}
+    .quickLinkTxt {
+      border-left: 1px solid $yellow;
+      border-right: 0;
+      right: 140px;
+      left: auto;
+      padding: 5px 0px 5px 35px;
+    }
+    .chatBtn {left: 28px; right: auto;}
+  }
+  .intro .bookRefHome {
+    h2 {
+      background-position: right 3px;
+      padding: 0 30px 0 0;
+    }
+    .bkForm {
+      input.subBtnTv {left: 0; right: auto;}
+      input[type="text"] {padding: 0 10px 0 50px}
+    }
+
+  }
+  footer .footerCopyRight .container p.copyText {margin-left: 0; margin-right: -15px;}
+  footer .footerCopyRight .container::before {left: 100%; right: auto;}
+  .footFollowUs {
+    float: left;
+    ul {
+      margin: 0  0 0 -30px !important;
+    }
+  }
+  footer .footerCopyRight .container .footFollowUs ul:after {
+    left: auto; right: 100%;
+  }
+  .searchBarSec .serText_1 img {
+    float: right;
+    margin: 7px 0 10px 10px;
+  }
+
+  header .topHeader .topHleft ul li{
+    font-size: 12px;
+    padding: 8px 15px;
+  }
+
+  header .topHeader .topHleft ul li.hasDropEd .dropDownEd.listItems li {
+    padding: 0 13px 0 0;
+    &:before {
+      left: auto;
+      right: 0;
+      @include transform(rotate(180deg));
+    }
+  }
+  .social-block .contact-details .tel {padding-right: 0; padding-left: 12px;}
+  select {background-position: 0px center;}
+  .locationBoxes ul.boxes li {
+    text-align: $left;
+    address {text-align: $right;}
+  }
+  .aboutUsPg .textDtl {padding-right: 0; padding-left: 30px;}
+  .fleetSerBar {
+    .shotingLink ul li {background-position: left center;}
+    .SelectBoxsW,
+    .shotingLink {
+      padding-left: 12px; padding-right: 0;
+    }
+    input.redishButton {left: 0; right: auto;}
+  }
+   section.bookingSec .singleRow {
+     .imgBox,
+     .bookDtlSec{
+       /*float: right;*/
+     }
+    .bookDtlSec .bookPSec .col {
+      /*float: right;*/
+      &:before{
+        left: auto;
+        right: 0;
+      }
+      h2{
+        line-height: 1.5;
+      }
+      padding-left: 0;
+      padding-right: 25px;
+
+      &.bookFeature ul li {
+        float: right;
+        text-align: right;
+        p {
+          text-align: right;
+          text-indent:9px;
+        }
+      }
+      &.bookBtn {border: 0;}
+    }
+  }
+  .standardPageSec ol li,
+  .standardPageSec ul li{
+    padding: 0 15px 0 0 ;
+    &:before {
+      @include absolute(0, 0, auto, auto);
+    }
+  }
+  .servicesSec .whiteBox1240.second .textSec, .servicesSec .whiteBox1240.third .textSec, .servicesSec .whiteBox1240.fourth .textSec {
+    padding-left: 15px;
+    padding-right: 0;
+  }
+  .faqsAccordion .panel-group .panel .panel-heading {
+    h4 a {
+      padding: 24px 48px 10px 20px;
+      span.qusno {
+        right: 0; left: auto;unicode-bidi: bidi-override;
+      }
+    }
+    .accordion-toggle::after {
+      left: 0; right: auto;
+    }
+  }
+  .shotingLink ul {
+    text-align: right;
+    li {
+      background-position: left top;
+      a {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+  }
+  .bookingStepsLink ul li {
+    float: right;
+    span {
+      margin-right: 0;
+      margin-left: 20px;
+    }
+    &:after {
+      @include transform(rotate(180deg));
+      left: 0;
+      right: auto;
+    }
+  }
+  .pricePageSec {
+
+    .reservation-message{
+      .code{
+        padding: 20px 200px 20px 20px;
+        &:before{
+          top: -80px;
+          left: auto;
+          right: -80px;
+          transform:scaleX(-1);
+        }
+      }
+    }
+
+    .leftCol{
+      .col {
+        &.twoBig li {
+          img {
+            margin-right: 0;
+            margin-left: 10px;
+          }
+        }
+        &.bookFeature ul li {
+          float: right;
+          text-align: right;
+          p {text-align: right; text-indent: 9px}
+        }
+      }
+    }
+    .rightCol .extraOptList {
+      margin: 15px 15px 0 -45px;
+      .row {
+        &.deFaultRow p.checkBox {
+          input[type="checkbox"]:not(old) + label,
+          input[type="radio"]:not(old) + label {
+            margin-left: 0;
+            margin-right: -28px;
+          }
+        }
+        &.nextSteap {
+          padding-right: 0;
+          padding-left: 45px;
+          .redishButtonRound {
+            float: right;
+            margin-right: 0;
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  }
+  .payLoginFrm {
+    margin-right: 0; margin-left: -60px;
+    .innerWrapFrm {
+      padding-right: 0;
+      padding-left: 90px;
+      input {
+        width: 48.5%; float: left;
+        &:first-of-type {float: right;}
+      }
+      input.edBtn {left: 0; right: auto; width: auto;}
+    }
+  }
+  .payFrmUserInfo .formFields li.acceptTnC,
+  .regFormOne p.checkBox {
+    input[type='checkbox'] {display: none;}
+    input[type="checkbox"]:not(old) + label {
+      background-position: right 0;
+      margin-left: 0;
+      padding-left: 0;
+      padding-right: 26px;
+    }
+    input[type="checkbox"]:checked:not(old) + label {
+      background-position: right -24px;
+    }
+  }
+  .promoCodeArea {
+    margin-left: -60px; margin-right: 0;
+    padding-left: 60px; padding-right: 8px;
+
+    .BtnNtXT {
+      input.edBtn {float: right; margin-left: 10px; margin-right: 0;}
+      p img {float: right; margin-left: 5px; margin-right: 0;}
+    }
+  }
+  .paymentOption {
+    margin-left: -60px; margin-right: 0;
+    padding-left: 60px; padding-right: 8px;
+    li , &.objects li {
+      input[type="radio"]:not(old) + label {
+        background-position: right 2px;
+        padding-left: 0;
+        padding-right: 28px;
+      }
+      input[type="radio"]:checked:not(old) + label {background-position: right -46px;}
+    }
+  }
+  .checkBoxFun {
+    margin-left: -60px;
+    margin-right: 0;
+    padding-left: 60px;
+    padding-right: 54px;
+    .absCheckBox  {
+      left: auto;; right: 15px;
+    }
+  }
+  .registrationPage .whiteBox1240 {
+    .rightSec {
+      padding-left: 150px;
+      padding-right: 128px;
+    }
+    .leftSec {
+      border-left: 1px solid #f8ac19;
+      border-right: 0px solid #f8ac19;
+      padding-left: 150px;
+      padding-right: 60px;
+    }
+  }
+  .accountTopHead {
+    h3 {text-align: right;}
+    .text-right {text-align: left;}
+  }
+  .accountTopHead .accMeny_Details {
+    .leftMenu {
+      float: right;
+    }
+    .rightDetails {
+      float: left;;
+    }
+  }
+  .myProfDetail {
+    .myBookingSerBar {
+      float: left;
+      text-align: left;
+      input.search {background-position: 4px center;}
+    }
+  }
+  .myBookingRow  {
+    .topName {
+      float: right;
+    }
+    .topOptions {
+      float: left;
+      text-align: left;
+      h4 span {display: inline-block;}
+      .buttonsOpt {
+        padding-left: 0;
+        padding-right: 15px;
+        button {
+          margin-left: 0;
+          margin-right: 2px;
+          min-width: 76px;
+          padding: 0;
+          text-align: center;
+          img {margin-left: 4px; margin-right: 0;}
+        }
+      }
+    }
+    .mBookingDTL {
+      .col {
+        &.imgBox {padding-left: 0px; padding-right: 0;}
+        &.twoBig {
+          border-left:2px solid #ffffff;
+          border-right: 0;
+          ul li {
+            padding-left: 0;
+            padding-right: 26px;
+          }
+        }
+        &.small {
+          ul li {
+            float:right;
+            text-align: right;
+            p { text-align: right;text-indent: 9px}
+          }
+        }
+      }
+    }
+  }
+  .bookingDetailSec .sixBoxStr {
+    .col {
+      .bCenter {
+        text-align: right;
+      }
+      &.bookFeature {
+        ul li {
+          text-align: right;
+          p {
+            text-align: right;
+            text-indent: 9px;
+          }
+        }
+      }
+    }
+  }
+  .pricePageSec .rightCol h1 {padding-right: 0; padding-left: 80px;}
+  .pricePageSec .rightCol.payConfEd form.goBack {float: left;}
+  header .logoMenuTop .menuRight ul.nav > li.hasDropEd .dropDownEd ul li .iconEd {
+    margin: 0  0 0 8px;
+  }
+  .three-colHome .col > div.latestOfferSl > .capWithOffer {right: 30px; left: auto;}
+  .myProfDetail label.grayLbl {margin-right: 0; margin-left: 5px;}
+  section.bookingSec:not(.fleet) .singleRow {
+    font-size: 0;
+    .imgBox,
+    .bookDtlSec {
+      font-size: 14px;
+      display: inline-block;
+      float: none;
+      vertical-align: middle;
+    }
+    .bookDtlSec .bookPSec {
+      font-size: 0;
+      .col {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+        &.bookFeature ul li {
+          display: inline-block; vertical-align: top;
+        }
+      }
+    }
+  }
+  .pricePageSec .rightCol .extraOptList p.checkBox label {
+    float: right;
+  }
+  span.sar_ar {
+    display: inline-block;
+    font-size: 10px;
+    line-height: 18px;
+    vertical-align: middle;
+  }
+  .intl-tel-input {direction: ltr; text-align: left;}
+  .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-4 .selected-flag {direction: ltr;}
+  .pricePageSec .leftCol .totalWdisValu ul li h4 {line-height: 1.2;}
+
+  .three-colHome {
+    .col {
+      > div {
+        .capWithOffer {
+          .offerBox {
+            line-height: 1;
+            padding-bottom: 5px;
+            span.sar_ar {
+              display: inline-block;
+              padding-right: 5px;
+              width: auto;
+            }
+          }
+        }
+        h2 {line-height: 1;}
+        .carousel {
+          .carousel-inner .item .imgBg .capWithOffer {
+            min-height: 111px;
+          }
+          .carousel-indicators {
+            top: 113px;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    .footerLinks {
+      .quickLinkTxt {
+        line-height: 1.2;
+      }
+    }
+  }
+
+  .bookingStepsLink {
+    ul {
+      li {
+        span {
+          line-height: 0.9;
+        }
+      }
+    }
+  }
+
+  .myProfDetail {
+    .paymentOption {
+      ul li {
+        p {
+          line-height: 1.2;
+        }
+      }
+    }
+  }
+  .searchNbookSec .searchBarSec .serText_1 {line-height: 1.2;}
+  .pricePageSec .leftCol .bookName h2,
+  section.homeSlider .carousel .carousel-inner > .item .carousel-caption .container > div h2, section.homeSlider .carousel .carousel-inner > .item .carousel-caption .container > div p{line-height: 1.4;}
+  .social-block h3,
+  .social-block .title,
+  .bookName h2{line-height: 1.5;}
+  .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+    float: $right;
+  }
+  .delLocMapPopUp .modal-dialog .modal-content {
+    .modal-body{
+      .mapSerPopup {
+        left: auto !important;
+        right: 110px !important;
+      }
+    }
+    .modal-footer {
+      h4 {
+        padding-right: 0;
+        padding-left: 80px;
+        text-align: right;
+      }
+      .mapConfirm {
+        left: 0;
+        right: auto;
+      }
+    }
+  }
+}
+@media screen and (max-width:1500px)  {}
+@media screen and (max-width:1366px)  {}
+@media (min-width: 1200px) {
+  body.arb {
+    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+      float: $right;
+    }
+  }
+}
+/*============================================
+      Some extra START Here
+============================================*/
+body.arb {
+  #PopUpForLoyaltyConfirmation .whiteBox1240 {
+    margin: 0 -20px;
+    text-align: right;
+    p {
+      text-align: right;
+    }
+    .leftSec {
+      border-left: 1px solid #f8ac19;
+      border-right: 0px solid #f8ac19;
+    }
+    label {
+      float: right;
+      margin: 10px 0 0 10px;
+    }
+  }
+  .select2-container--default .select2-selection--single .select2-selection__arrow {
+    left:1px;
+    right: auto;
+  }
+  .select2-container--default .select2-selection--single .select2-selection__rendered {
+    text-align: right;
+    padding: 0 0 0 20px;
+  }
+  .select2-container--default .select2-selection--multiple .select2-selection__rendered li {
+    float: right;
+  }
+  .redeemText {
+    img {float: right}
+    span {
+      margin-top: 5px;
+    }
+  }
+  .pricePageSec .leftCol .totalWdisValu ul li h4.totalWithVat {
+    font-family: "DroidArabicKufi-Regular" !important;
+  }
+}
+body.arb header .topHeader .topHleft ul li.myBooking {
+  padding-top: 7px; padding-bottom: 5px;
+  input[type="button"], input[type="submit"] {
+    right: auto; left: 10px;
+  }
+}
+/*============================================
+      Some extra END Here
+============================================*/
+
+
+/*============================================
+      Responsive Here
+============================================*/
+@media screen and (max-width:1199px)  {
+  body.arb {
+    footer .footerLinks ul {padding-right: 145px;}
+    section.bookingSec .singleRow .bookDtlSec .bookPSec .col.totalRent {padding-right: 20px;}
+    .payLoginFrm,
+    .promoCodeArea,
+    .payFrmUserInfo .paymentOption,
+    .checkBoxFun {
+      margin-left: -25px;
+      margin-right: 0;
+      padding-left: 25px;
+      padding-right: 10px;
+    }
+    .checkBoxFun {padding-right: 54px;}
+    .registrationPage .whiteBox1240 {
+      .rightSec {
+        padding-left: 10%;
+        padding-right: 10%;
+      }
+      .leftSec {
+        padding-left: 10%;
+        padding-right: 10%;
+      }
+    }
+    footer .footerLinks .quickLinkTxt {right: 15px;}
+
+  }
+}
+@media screen and (max-width:1024px) {
+  body.arb {
+    .searchBarSec .serFormArea .fleetDropDown {
+      &#dropOff {
+      left: auto; right: 322px;
+    }
+      .locaListFix {
+        h3, a {
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  body.arb {
+    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+      float: $right;
+    }
+  }
+}
+@media screen and (max-width: 991px)  {
+  body.arb {
+
+    .searchBarSec .serFormArea ul li.big, .searchBarSec .serFormArea {
+      padding: 0;
+      ul li {float: none;}
+    }
+    .searchBarSec .serFormArea {
+      > ul li.submitBtn input {background-position: 97% center;}
+      .fleetDropDown {left: 0; right: 0;}
+    }
+    .intro .desc {padding: 0 0 0 20px;}
+    .social-block .col {float: none;}
+    .servicesSec .whiteBox1240.second .textSec, .servicesSec .whiteBox1240.third .textSec, .servicesSec .whiteBox1240.fourth .textSec {
+      padding-left: 0px;
+    }
+    .bookingStepsLink ul li::after {right: 0;}
+    .pricePageSec .rightCol .extraOptList {
+      margin-left: -1px;
+      > .row.deFaultRow {
+        > div:first-child {padding-left: 0; padding-right: 15px;}
+        p.checkBox input[type="checkbox"]:not(old) + label {margin-right: -20px;}
+      }
+
+    }
+    .payLoginFrm,
+    .promoCodeArea,
+    .payFrmUserInfo .paymentOption,
+    .checkBoxFun {
+      margin-left: -15px;
+      padding-left: 15px;
+    }
+    .registrationPage .whiteBox1240 {
+      .rightSec {
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+      .leftSec {
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+    }
+    .paymentOption ul li:first-child {margin-bottom: 10px;}
+    .myBookingRow .mBookingDTL {
+      padding-left: 0;
+      padding-right: 30%;
+      .col.imgBox {left: auto; right: 0;}
+    }
+    .searchBarSec .serFormArea .fleetDropDown {
+      &#dropOff {
+        left: auto; right: 0px;
+      }
+    }
+    section.social-block .col {text-align: right;}
+    .social-block .col ul.social-networks li {
+      margin: 0 0 5px -10px;
+      a {
+        @include transform-origin(100% 0 0);
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  body.arb {
+    .loyality_text .loyality_Cards {
+      margin-top: 24px;
+      > div[class^="col-"] {float: right;}
+    }
+    .latestNewsSec {
+      .imgBox {padding-right: 0; padding-left: 5px;}
+      .textSec {padding-right: 10px; padding-left: 0;}
+    }
+    .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 { float: right;}
+
+
+  }
+}
+@media screen and (max-width: 767px)  {
+  body.arb {
+
+    .pricePageSec{
+      .reservation-message{
+
+        .code{
+          padding: 20px 100px 20px 20px;
+          &:before{
+            left: auto;
+            right: -70px;
+          }
+        }
+      }
+    }
+
+    header .logoMenuTop {
+      .navbar-header {
+        float: left;
+        button.navbar-toggle {
+          float: right;
+          .icon-bar {
+          }
+        }
+        .navbar-brand {float:left;}
+
+      }
+      .menuRight {
+        right: 0; left: auto;
+        ul.nav li.hasDropEd .dropDownEd {
+          right: 0; left: auto;
+          button.menuIconT {left: auto; right: 25px;}
+        }
+      }
+    }
+    section.homeSlider .carousel .carousel-inner > .item .carousel-caption .container {text-align: right;}
+    footer .footerLinks ul {padding-right: 0;}
+    footer .footerCopyRight .container p.copyText {margin-right: 0;}
+   .aboutUsPg .textDtl {padding: 0;}
+   .fleetSerBar {padding: 0;}
+    section.bookingSec .singleRow {
+      padding: 20px;
+      .bookDtlSec .bookPSec .col {
+        padding: 20px 10px;
+        &.bookFeature ul li{
+          float: none;
+        }
+        &.bookName .helpBox .click{
+          display: inline-block;
+        }
+      }
+
+    }
+    .faqsAccordion .panel-group .panel .panel-heading h4 a {padding-top: 15px;}
+    .bookingStepsLink ul li {text-align: right;}
+    .bookingStepsLink ul li::after {right: auto;left: 10px;}
+    .payLoginFrm,
+    .promoCodeArea,
+    .payFrmUserInfo .paymentOption,
+    .checkBoxFun {
+      margin-left: 0px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .checkBoxFun {padding-right: 54px;}
+    .registrationPage .whiteBox1240 {
+      .rightSec, .leftSec {
+        border-left:0;
+        padding-left: 0%;
+        padding-right: 0%;
+      }
+    }
+    .accountTopHead .accMeny_Details .rightDetails ul li h3 {text-align: center;}
+    .myBookingRow {
+      .mBookingDTL {padding-right: 0;}
+      .topOptions {text-align: center;}
+
+
+    }
+    .myProfDetail .myBookingSerBar {text-align: center;}
+    #PopUpForLoyaltyConfirmation .whiteBox1240 {
+      margin: 0;
+      .leftSec {border: 0px;}
+    }
+
+
+
+  }
+}
+@media screen and (max-width: 640px)  {}
+@media screen and (max-width: 480px)  {
+  body.arb {
+    .payLoginFrm .innerWrapFrm {
+      padding-left: 0;
+      input.edBtn {float: right;}
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

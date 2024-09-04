@@ -1,0 +1,53 @@
+image: atlassian/default-image:2
+
+options:
+  docker: true
+
+stepdefinitions:
+  - step: &build-step
+      name: SonarQube analysis
+      image: maven:3.3.9
+      script:
+        - pipe: sonarsource/sonarqube-scan:1.0.0
+          variables:
+            SONAR_HOST_URL: ${SONAR_HOST_URL}
+            SONAR_TOKEN: ${SONAR_TOKEN}
+  - upload: &upload
+      name: Upload code base
+      script:
+        - echo "Packaging Key Ren app!"
+        - zip -r keyrent-prod-application.zip *
+        - pipe: atlassian/aws-code-deploy:0.2.10
+          variables:
+            AWS_DEFAULT_REGION: 'me-south-1'
+            AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+            AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+            COMMAND: 'upload'
+            APPLICATION_NAME: 'keyrent-prod-application'
+            ZIP_FILE: 'keyrent-prod-application.zip'
+            S3_BUCKET: 'keyrent-edesign-prod-urned-artifacts'
+  - deploy: &deploy
+      name: Deploy Key Rent Production
+      script:
+        - pipe: atlassian/aws-code-deploy:0.2.10
+          variables:
+            AWS_DEFAULT_REGION: 'me-south-1'
+            AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+            AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+            COMMAND: 'deploy'
+            APPLICATION_NAME: 'keyrent-prod-application'
+            DEPLOYMENT_GROUP: 'keyrent-prod-group'
+            WAIT: 'true'
+            S3_BUCKET: 'keyrent-edesign-prod-urned-artifacts'
+
+pipelines:
+  branches:
+    master:
+      - step: *build-step
+      - step: *upload
+      - step: *deploy
+
+
+clone:
+  depth: full
+

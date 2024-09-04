@@ -1,0 +1,43 @@
+.faqs-accordion-wrapper .accordion-button::after {
+    margin-right: auto;
+    margin-left: unset;
+}
+.myProfDetail .back2Page img {
+    transform: rotate(180deg);
+}
+#PopUpForLoyaltyConfirmation {
+    top: 0;
+}
+.book-car section.bookingSec .singleRow {
+    padding: 20px 25px;
+}
+.search-new-box .bookPSec h2 {
+    line-height: 1.5;
+}
+section.bookingSec .carsGrid .singleRow .bookDtlSec .bookPSec .totalRent {
+    padding-right: 10px;
+    padding-left: 20px !important;
+}
+
+.custom-select-full-box .custom-cehck-box input:checked + label:after {
+    top: 4px;
+}
+@media screen and (max-width: 1199px) {
+    .book-car section.bookingSec .singleRow {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+@media screen and (max-width: 991px) {
+    .custom-select-full-box .custom-cehck-box input:checked + label:after {
+        top: 5px;
+    }
+    .addPaymentSec .PayNowSec button{
+        padding: 0 16px;
+    }
+}
+@media screen and (max-width: 525px) {
+    .addPaymentSec .PayNowSec button {
+        padding: 10px 16px;
+    }
+}

@@ -1,0 +1,530 @@
+body.is_mobile a {
+    text-decoration: none;
+}
+body.is_mobile header .logoMenuTop .menuRight ul.nav {
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+body.is_mobile header .logoMenuTop .menuRight ul.nav > li a {
+    display: block;
+}
+body.is_mobile .modal-mobile .modal-dialog {
+    margin: auto;
+}
+body.is_mobile .modal-mobile .modal-footer {
+    flex-wrap: nowrap;
+}
+body.is_mobile .modal-body p {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+body.is_mobile .modal-footer a {
+    margin: 0;
+    font-size: 14px;
+}
+body.book-car.is_mobile .car-col-right .mobile-car-listing-main-box .col {
+    flex: none;
+}
+body.is_mobile .pricePageSec .rightCol .wpwl-container-card form {
+    padding-right: 12px;
+}
+
+body.is_mobile #cdw_plus_model .modal-header {
+    flex-direction: row-reverse;
+}
+body.is_mobile .modal-header {
+    flex-direction: row-reverse;
+    background-position: 15px 11px;
+    padding: 15px 24px 15px 62px;
+}
+body.is_mobile.arb .modal-header {
+    flex-direction: row-reverse;
+    background-position: top 11px right 15px;
+    padding: 15px 62px 15px 24px;
+}
+body.is_mobile #cdw_plus_model .modal-content {
+    padding: 0 20px;
+}
+body.is_mobile .btn-close {
+    float: right;
+}
+
+body.is_mobile.cc-payment .pricePageSec .pricePgWrapper .carSumery h3 {
+    margin-right: 0;
+}
+body.is_mobile .pricePageSec .pricePgWrapper .rightCol .orderSummary label {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    min-width: 24px;
+    min-height: 24px;
+}
+.hide {
+    display: none;
+}
+.summary-col-with-label {
+    display: flex;
+    flex-direction: column;
+}
+.arb.is_mobile .pricePageSec .pricePgWrapper .leftCol .bookFeature ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    max-width: unset;
+    align-items: center;
+}
+.arb.is_mobile .pricePageSec .pricePgWrapper .leftCol .bookFeature ul li {
+    width: auto;
+    text-align: center;
+}
+.arb.is_mobile .pricePageSec .pricePgWrapper .leftCol .bookFeature ul li p {
+    text-align: center;
+    text-indent: unset;
+}
+.arb.is_mobile .reservation-message .booking-detail .title {
+    direction: ltr;
+}
+body.arb.is_mobile .btn-close {
+    margin-left: 0;
+}
+body.is_mobile.arb .custom-cehck-box.terms-parent input:checked + label:after {
+    top: 5px;
+}
+body.is_mobile .pricePageSec .pricePgWrapper .rightCol .orderSummary span {
+    font-size: 14px;
+    line-height: 20px;
+}
+body.is_mobile .reservation-message .booking-detail h4 {
+    font-size: 18px;
+}
+body.is_mobile .btn-share-and-earn-on-subscription-wrapper {
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 40px;
+    padding-top: 10px;
+}
+body.is_mobile .btn-share-and-earn-on-subscription-wrapper a {
+    color: #fff;
+    background: #FF7F00;
+    border-radius: 10px;
+    line-height: 45px;
+    width: 285px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding-inline-end: 30px !important;
+    padding-inline-start: 10px !important;
+}
+body.is_mobile .btn-share-and-earn-on-subscription-in-header {
+    position: static;
+    background: transparent !important;
+}
+body.is_mobile .btn-share-and-earn-on-subscription-in-header a {
+    padding: 0 !important;
+    font-size: 13px;
+    text-transform: capitalize;
+}
+body.is_mobile.arb  .btn-share-and-earn-on-subscription-in-header a {
+    padding: 0 !important;
+    padding-inline-end: 30px !important;
+    padding-inline-start: 10px !important;
+    font-size: 13px;
+}
+body.is_mobile .btn-share-and-earn-on-subscription-wrapper a {
+    background-image: url(https://kra.ced.sa/public/frontend/images/network-sm.png);
+    background-repeat: no-repeat;
+    background-position: center right 10px;
+}
+body.is_mobile.arb .btn-share-and-earn-on-subscription-wrapper a {
+    background-position: center left 10px;
+    background-image: url(https://kra.ced.sa/public/frontend/images/network-sm-arb.png);
+}
+.share-and-earn-on-subscription-discount-section {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+}
+.share-and-earn-on-subscription-discount-btn a {
+    background-repeat: no-repeat;
+    background-position: center right 10px;
+    max-width: 363px;
+    margin: auto;
+    background-color: rgb(72 72 72 / 95%);
+    border-radius: 10px;
+    padding: 15px 20px;
+    padding-inline-end: 60px;
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff !important;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+body.arb .share-and-earn-on-subscription-discount-btn a {
+    background-position: center left 10px;
+}
+.couponModalonPayment .modal-header {
+    border-bottom: none;
+}
+.couponModalonPayment form {
+    padding: 20px 10px !important;
+}
+.couponModalonPayment .twoBtnEd {
+    text-align: center;
+}
+header .logoMenuTop .menuRight ul.nav > li.hasDropEd .menuIconT .icon-bar {
+    height: 3px;
+    width: 25px;
+    margin-bottom: 5px;
+    background-color: #fff !important;
+}
+header .logoMenuTop .menuRight ul.nav > li.hasDropEd .menuIconT .jw-icon-bar-2 {
+    width: 17px;
+}
+header .logoMenuTop .menuRight ul.nav > li.hasDropEd .menuIconT .jw-icon-bar-3 {
+    width: 11px;
+}
+.jw-topLang {
+    position: absolute;
+    inset-inline-end: 12px;
+}
+section.homeSlider {
+    background-color: #2e2e2e;
+}
+body.is_mobile.homePage .homeSlider .carousel {
+    background-color: transparent;
+}
+section.homeSlider .carousel .carousel-inner > .item img {
+    border-radius: 10px;
+}
+body.is_mobile.homePage section.homeSlider .item {
+    padding: 0 15px;
+}
+body.is_mobile header .logoMenuTop {
+    background: #2e2e2e;
+}
+body.is_mobile.homePage .homesearch .searchBarSec {
+    background-image: unset;
+}
+body.is_mobile.homePage .homesearch .app-btns {
+    position: absolute;
+    left: 50%;
+    bottom: 100px;
+    transform: translate(-50%);
+}
+body.is_mobile header .logoMenuTop .menuRight ul.nav > li.hasDropEd .dropDownEd .menuIconT .icon-bar + .icon-bar {
+    -webkit-transform: rotate(309deg);
+    transform: rotate(309deg);
+}
+body.is_mobile header .logoMenuTop .menuRight ul.nav > li.hasDropEd .dropDownEd .menuIconT .icon-bar {
+    top: 8px;
+    transform: rotate(228deg);
+}
+body.is_mobile header .logoMenuTop .menuRight ul.nav > li.hasDropEd .dropDownEd {
+    background-color: #2e2e2e;
+    width: 80%;
+}
+body.is_mobile header .logoMenuTop .menuRight ul.nav > li.hasDropEd .dropDownEd ul li {
+    text-align: start !important;
+    border-bottom: 2px solid white;
+    line-height: 60px;
+    padding: 0;
+}
+body.is_mobile .jw-mobile-version-side-bar-nav-list .jw-nav-menu-icon {
+    width: 35px;
+    display: inline-block;
+    margin-inline-start: 10px;
+}
+body.is_mobile .jw-mobile-version-side-bar-nav-list .jw-nav-menu-icon img{
+    margin: auto;
+}
+body.is_mobile header .logoMenuTop .menuRight ul.nav > li.hasDropEd .dropDownEd ul .jw-side-nav-phone a {
+    color :#FF7F00
+}
+body.is_mobile .jw-mobile-version-side-bar-nav-list {
+    max-width: 220px;
+    margin: auto;
+}
+body.is_mobile .btn-share-and-earn-on-subscription-wrapper a {
+    max-width: 220px;
+    padding-inline-end: 30px !important;
+}
+body.is_mobile .btn-share-and-earn-on-subscription-in-header {
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+body.is_mobile header .logoMenuTop .menuRight ul.nav > li.hasDropEd .dropDownEd .btn-box {
+    padding: 0;
+}
+body.is_mobile header .logoMenuTop .menuRight ul.nav > li.hasDropEd .dropDownEd .menuIconT {
+    top: 38px;
+    left: 24px;
+}
+body.is_mobile.arb header .logoMenuTop .menuRight ul.nav > li.hasDropEd .dropDownEd {
+    right: 120px !important;
+}
+body.is_mobile.arb header .logoMenuTop .menuRight ul.nav > li.hasDropEd.open .dropDownEd {
+    right: 0!important;
+}
+body.is_mobile header .logoMenuTop .menuRight ul.nav > li.hasDropEd.open .dropDownEd {
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 120px 6px;
+}
+body.is_mobile.arb header .logoMenuTop .menuRight ul.nav > li.hasDropEd .dropDownEd ul li a {
+    line-height: 60px;
+}
+body.is_mobile.arb .jw-mobile-version-side-bar-nav-list img {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+body.is_mobile.arb .btn-share-and-earn-on-subscription-in-header a {
+    padding-inline-end: 24px !important;
+    padding-inline-start: 5px !important;
+    font-size: 12px;
+    background-position: center left 5px;
+    text-align: start;
+}
+body.is_mobile header .logoMenuTop .menuRight ul.nav > li.hasDropEd .dropDownEd .btn-box h4 {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    font-weight: 400;
+}
+body.is_mobile header .logoMenuTop .menuRight ul.nav > li.hasDropEd .dropDownEd .btn-box a {
+    margin: 3px;
+}
+body.is_mobile.homePage .jw-home-screen .searchBarSec {
+    min-height: unset;
+    padding-top: 20px;
+}
+body.is_mobile section.homeSlider .jw-home-screen {
+    height: calc(100vh - 119px);
+}
+body.is_mobile.homePage .homesearch .searchBarSec .booking-mode-tabs {
+    display: flex;
+    justify-content: space-between;
+}
+body.is_mobile.homePage .homesearch .searchBarSec .booking-mode-tabs .booking-mode-tabs-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100px;
+}
+body.is_mobile.homePage .homesearch .searchBarSec .cls-four .booking-mode-tabs .booking-mode-tabs-item {
+    width: 120px;
+}
+body.is_mobile.homePage .homesearch .searchBarSec .cls-three .booking-mode-tabs .booking-mode-tabs-item {
+    width: 150px;
+}
+body.is_mobile.homePage .homesearch .searchBarSec .cls-two .booking-mode-tabs .booking-mode-tabs-item {
+    width: 250px;
+}
+body.is_mobile.homePage .homesearch .searchBarSec .booking-mode-tabs .booking-mode-tabs-item a{
+    width: 100%;
+    background-color: #FE7E00;
+    border-radius: 10px;
+    line-height: 60px;
+}
+body.is_mobile.homePage .homesearch .searchBarSec .booking-mode-tabs .booking-mode-tabs-item span {
+    font-size: 13px;
+    color: white;
+    line-height: normal;
+    padding-top: 10px;
+    font-weight: bold;
+}
+body.is_mobile.homePage .homesearch .searchBarSec .manage-booking-tab a {
+    display: block;
+    background: #FE7E00;
+    color: white;
+    border-radius: 10px;
+    line-height: 50px;
+    margin-top: 20px;
+}
+.jw-home-screen .app-btns .app-box-icons {
+    flex-wrap: nowrap;
+}
+body.is_mobile .jw-nav-menu {
+    padding-inline-start: 13px;
+}
+.jw-side-bar-lag-switch-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+body.is_mobile header .logoMenuTop {
+    height: 119px;
+    padding-top: 40px !important;
+}
+body.is_mobile header .logoMenuTop .menuRight {
+    top: 47px;
+}
+body.is_mobile header .logoMenuTop .menuRight ul.nav > li.hasDropEd.open .dropDownEd {
+    padding-top: 100px;
+}
+body.is_mobile header .logoMenuTop .menuRight ul.nav > li.hasDropEd .dropDownEd .menuIconT {
+    top: 53px;
+}
+body.is_mobile.arb .jw-side-bar-lag-switch-wrapper .jw-topLang {
+    top: 53px !important;
+    right: 66vw !important;
+}
+body.is_mobile header .logoMenuTop .menuRight ul.nav > li.hasDropEd .dropDownEd .topLang {
+    top: 53px;
+}
+body.is_mobile header .logoMenuTop .menuRight ul.nav > li.hasDropEd .dropDownEd .menuIconT {
+    top: 60px;
+}
+body.is_mobile.homePage section.homeSlider .item img {
+    height: 210px;
+}
+body.is_mobile section.homeSlider .jw-home-screen {
+    background-size: cover;
+    background-position: bottom;
+}
+.jw-home-screen .download-apps-title h4 {
+    color: black;
+}
+body.is_mobile .mobile-manage-booking-icon {
+    background-image: url(../images/new-images/manage-booking-tab-mobile-1.png);
+    background-size: cover;
+}
+.jw-booking-mode-tabs-item-daily img {
+    width: 47px;
+}
+.jw-booking-mode-tabs-item-monthly img {
+    width: 48px;
+}
+.jw-booking-mode-tabs-item-weekly img {
+    width: 38px;
+}
+.jw-booking-mode-tabs-item-delivery img {
+    width: 42px;
+}
+.jw-booking-mode-tabs-item-hourly img  {
+    width: 47px;
+}
+.jw-booking-mode-tabs-item-subscription img {
+    width: 44px;
+}
+.jw-topLang img{
+    width: 30px;
+    height: 29px;
+}
+.jw-app-box-icons img{
+    width: 45px;
+    height: 45px;
+}
+.jw-btn-box-1 img {
+    width: 45px;
+    height: 45px;
+}
+.jw-nav-menu-icon-home img {
+    width: 23px;
+    /*height: 23px;*/
+}
+.jw-nav-menu-icon-booking img {
+    width: 26px;
+    /*height: 26px;*/
+}
+.jw-nav-menu-icon-user img {
+    width: 23px;
+    /*height: 25px;*/
+}
+.jw-nav-menu-icon-offers img {
+    width: 28px;
+    /*height: 33px;*/
+}
+.jw-nav-menu-icon-fleet img {
+    width: 35px;
+    /*height: 20px;*/
+}
+.jw-nav-menu-icon-phone img {
+    width: 22px;
+    /*height: 21px;*/
+}
+.jw-nav-menu-icon-full_version img {
+    width: 30px;
+    /*height: 30px;*/
+}
+.manage-booking-tab span {
+    font-weight: bold;
+    margin-inline-start: 6px;
+}
+body.is_mobile .btn-share-and-earn-on-subscription-wrapper a {
+    background-image: url(https://kra.ced.sa/public/frontend/images/new-images/share-earn.png);
+    background-repeat: no-repeat;
+    background-position: center right 10px;
+    background-size: 25px;
+}
+body.is_mobile.arb .btn-share-and-earn-on-subscription-wrapper a {
+    background-image: url(https://kra.ced.sa/public/frontend/images/new-images/share-earn-arb.png);
+}
+body.is_mobile .jw-multi-lang-switch {
+    position: absolute;
+    top: 58px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 160px;
+}
+@media screen and (max-width: 767px) {
+    body.is_mobile .maxWidth1330 {
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 575px) {
+    body.is_mobile.homePage .homesearch .searchBarSec .booking-mode-tabs .booking-mode-tabs-item {
+        width: 80px;
+    }
+    body.is_mobile.homePage .homesearch .searchBarSec .cls-four .booking-mode-tabs .booking-mode-tabs-item {
+        width: 105px;
+    }
+    body.is_mobile.homePage .homesearch .searchBarSec .cls-three .booking-mode-tabs .booking-mode-tabs-item {
+        width: 137px;
+    }
+    body.is_mobile.homePage .homesearch .searchBarSec .cls-two .booking-mode-tabs .booking-mode-tabs-item {
+        width: 215px;
+    }
+}
+@media screen and (max-width: 480px) {
+    body.is_mobile.homePage .homesearch .searchBarSec .booking-mode-tabs .booking-mode-tabs-item {
+        width: 64px;
+    }
+    body.is_mobile.homePage .homesearch .searchBarSec .cls-four .booking-mode-tabs .booking-mode-tabs-item {
+        width: 92px;
+    }
+    body.is_mobile.homePage .homesearch .searchBarSec .cls-three .booking-mode-tabs .booking-mode-tabs-item {
+        width: 110px;
+    }
+    body.is_mobile.homePage .homesearch .searchBarSec .cls-two .booking-mode-tabs .booking-mode-tabs-item {
+        width: 160px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    body.is_mobile section.search_fleet-booking-sect.fleet .singleRow {
+        padding: 20px !important;
+    }
+    body.is_mobile.homePage .homesearch .searchBarSec .cls-four .booking-mode-tabs .booking-mode-tabs-item {
+        width: 80px;
+    }
+}
+@media screen and (max-width: 375px) {
+    body.is_mobile.homePage .homesearch .searchBarSec .cls-four .booking-mode-tabs .booking-mode-tabs-item {
+        width: 67px;
+    }
+    body.is_mobile.homePage .homesearch .searchBarSec .cls-three .booking-mode-tabs .booking-mode-tabs-item {
+        width: 85px;
+    }
+    body.is_mobile.homePage .homesearch .searchBarSec .cls-two .booking-mode-tabs .booking-mode-tabs-item {
+        width: 135px;
+    }
+    body.is_mobile .jw-multi-lang-switch {
+        width: 130px;
+    }
+}

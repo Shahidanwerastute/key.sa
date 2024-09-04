@@ -1,0 +1,547 @@
+/* css for site after adding bootstrap 5.3*/
+
+.new-header-style .logoMenuTop .navbar>.container ,
+.new-header-style .logoMenuTop .navbar>.container-md{
+    display: block;
+}
+.new-header-style .logo-menu-box .navbar-collapse {
+    flex-basis: unset;
+    flex-grow: unset;
+}
+.logoMenuTop .navbar .row {
+    align-items: center;
+}
+.hide {
+    display: none !important;
+}
+.servicesSec .whiteBox1240 a {
+    text-decoration: none;
+}
+.carSelling .sellCarList h3 {
+    margin-top: 20px;
+}
+.servicesSec .whiteBox1240:last-child {
+    margin-bottom:0;
+}
+.whiteBox1240:last-child {
+    margin-bottom:0;
+}
+.searchBarSec .serFormArea {
+    float: unset;
+}
+.simplePagerContainer .simplePagerNav {
+    align-items: center;
+    justify-content: center;
+}
+.simplePagerContainer .simplePagerNav li a {
+    background: transparent;
+    border: none;
+    border-radius: 6px;
+    transition-duration: 0.5s;
+    line-height: 1.42857143;
+    color: #444444;
+}
+.simplePagerNav.pagination > li > a:hover,
+.simplePagerNav.pagination > li > a:focus {
+    color: #fff;
+    background-color: #f8ac19;
+    box-shadow: none;
+}
+.eng.services .standardPageSec .whiteBox1240.fourth {
+    margin-bottom: 0;
+}
+.faqs-accordion-wrapper .accordion .accordion-item {
+    margin-bottom: 20px !important;
+    padding: 39px 45px;
+    border: none;
+    background: #FFFFFF !important;
+    box-shadow: 0px 5px 16px rgba(8, 15, 52, 0.06) !important;
+    border-radius: 18px !important;
+}
+.faqs-accordion-wrapper .accordion .accordion-item:has(.show) {
+    border: 2px solid #FF8316;
+}
+.faqs-accordion-wrapper .accordion-item:first-of-type .accordion-button {
+    border-radius: unset;
+}
+.faqs-accordion-wrapper .accordion-button:not(.collapsed) {
+    color: #FF8316;
+    background-color: unset;
+    box-shadow: unset;
+}
+.faqs-accordion-wrapper  h2.accordion-header:focus-visible {
+    outline: none;
+}
+.faqs-accordion-wrapper  h2.accordion-header button:focus-visible,
+.faqs-accordion-wrapper  h2.accordion-header button:focus{
+    outline: none;
+    border: none;
+    box-shadow: unset;
+}
+.faqs-accordion-wrapper .accordion-button {
+    color: #FF8316;
+    font-size: 16px;
+    padding: 0;
+}
+.faqs-accordion-wrapper .accordion-button::after {
+    content: "\f078";
+    font-family: FontAwesome;
+    background-image: none;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.faqs-accordion-wrapper .accordion-button:not(.collapsed)::after {
+    background-image: none;
+    color: #fff;
+    background-color: #FF8316;
+}
+.faqs-accordion-wrapper .accordion-body {
+   padding: 15px 0 0 0;
+}
+.faqs-accordion-wrapper .accordion-body p {
+    font-size: 14px;
+}
+.modal-content {
+    padding: 0 20px;
+}
+.modal-header .btn-close {
+    border: 0;
+    background-color: transparent;
+    background-image: url(../images/close.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 20px;
+    opacity: 1;
+    padding: 0;
+    width: 20px;
+    -webkit-appearance: none;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    inset-inline-end: 0;
+    top: 0;
+}
+.btn-close:focus {
+    box-shadow: none;
+}
+.program_awards .whiteBox1240.second img {
+    width: 100%;
+}
+.container:has(.whiteBox1240) {
+    padding-bottom: 10px;
+}
+.profile .container:has(.myAccountWrapper) {
+    padding-bottom: 10px;
+}
+.profile .myAccountWrapper {
+    margin-bottom: 0;
+}
+.loyalty .myAccountWrapper {
+    margin-bottom: 0;
+}
+.loyalty .container:has(.myAccountWrapper) {
+    padding-bottom: 10px;
+}
+.offersPage .gapBottom {
+    position: relative;
+}
+#cards-section tbody tr:last-child {
+    border-bottom-style: hidden;
+}
+.lp-card-content ul li {
+    font-size: 14px;
+}
+.colored-li ul li span {
+    color:#f39c12 !important;
+}
+.colored-li ul li {
+    color:#f39c12 !important;
+}
+.myProfDetail .back2Page {
+    float: inline-end;
+}
+#loyalty-back-to-top-button {
+    inset-inline-end: 10px;
+    inset-block-end: 141px;
+}
+.careers .select2-container {
+    width: 100% !important;
+}
+.location .btn-booking {
+    margin-inline-start: 5px;
+    margin-left: unset;
+}
+.contact-info-box {
+    justify-content: center;
+}
+.social-block .contact-details .tel {
+    padding: 0px 4px 0 0;
+}
+.social-block .contact-details {
+    width: auto;
+}
+#PopUpForLoyaltyConfirmation label {
+    font-weight: 700;
+    line-height: 14px;
+}
+.pricePageSec .pricePgWrapper {
+    margin-bottom: 0;
+    padding-bottom: 6px;
+}
+.checkbox-available .form-check-input:focus {
+    box-shadow: unset;
+}
+.form-check-input {
+    border: none;
+}
+.payLoginFrm label {
+    font-weight: bold;
+}
+.payLoginFrm label a {
+    text-decoration: none;
+}
+.payLoginFrm label a:hover {
+    text-decoration: underline;
+}
+#interestedInCar .g-recaptcha>div:first-child {
+    margin: auto;
+}
+#interestedCorporateSalesModal .g-recaptcha>div:first-child {
+    margin: auto;
+}
+section.homeSlider .carousel .carousel-inner > .carousel-item img {
+    width: 100% !important;
+    height: auto;
+}
+#homeSlider .carousel-control-prev-icon,
+#homeSlider .carousel-control-next-icon{
+    /*background-image: unset;*/
+}
+.profile-btns-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.myBookingRow .features ul {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    margin: 0!important;
+}
+.myBookingRow .features ul li {
+    margin: 0!important;
+    width: unset !important;
+}
+
+.corporate-profile-btns-section {
+    display: flex;
+    justify-content: flex-end;
+}
+.servicesSec .whiteBox1240 a:hover {
+    text-decoration: underline;
+}
+/**/
+
+.peyment-option-text-box .qitafContent .BtnNtXT,
+.peyment-option-text-box .niqatyContent .BtnNtXT,
+.peyment-option-text-box .mokafaaContent .BtnNtXT,
+.peyment-option-text-box .anbContent .BtnNtXT {
+    width: calc(100% + 15px) !important;
+    left: 50% !important;
+    transform: translate(-50%) !important;
+}
+.peyment-option-text-box .redeem-options-row-1.section-with-two-option .promoCodeArea .BtnNtXT input.edBtn,
+.peyment-option-text-box .redeem-options-row-2.section-with-two-option .promoCodeArea .BtnNtXT input.edBtn {
+    width: 100% !important;
+}
+.peyment-option-text-box .promoCodeArea .BtnNtXT input.edBtn {
+    width: 100% !important;
+}
+.cc-payment .myAccountSec {
+    padding-bottom: 10px;
+}
+.addPaymentTabsSec .nav-tabs .nav-item .nav-link {
+    width:100%;
+    color: #000;
+    border: none;
+    padding: 15px;
+}
+.addPaymentTabsSec .nav-tabs .nav-item .nav-link.active {
+    background-color: #FE7E00;
+    color: #fff;
+    margin-bottom: 0;
+    border-radius: 5px;
+}
+.myAccountSec .myAccountWrapper {
+    margin-bottom: 0;
+}
+.myAccountSec {
+    padding-bottom: 20px;
+}
+.delLocMapPopUp .modal-footer {
+    align-items: center;
+    justify-content: center;
+}
+.has_subscription_rates .bookPSec {
+    display: flex !important;
+    flex-direction: column;
+}
+.copyText {
+    margin-bottom: 0;
+}
+body.arb .myBookingRow .topOptions .buttonsOpt {
+   text-align: left;
+}
+.search-main-container-new-design .dropdown-tabs .nav-tabs li {
+    position: relative;
+}
+.search-main-container-new-design .dropdown-tabs .nav-tabs li a.nav-link.active {
+    color: white !important;
+    border: none;
+}
+.search-main-container-new-design .dropdown-tabs .nav-tabs li.nav-item a.nav-link.active:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -9px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 10px solid #fe7e00;
+    display: block;
+    width: 0;
+}
+.btn-share-and-earn-on-subscription-wrapper {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+    bottom: 20px;
+}
+.btn-share-and-earn-on-subscription-wrapper a {
+    color: #fff;
+    background: #FF7F00;
+    border-radius: 10px;
+    line-height: 45px;
+    width: 285px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding-inline-end: 30px !important;
+    padding-inline-start: 10px !important;
+    text-decoration: none;
+}
+.how-it-works-btn {
+    text-decoration: none;
+}
+.refer-page-btn-done a {
+    text-decoration: none;
+}
+.share-and-earn-on-subscription-discount-btn a {
+    background-repeat: no-repeat;
+    background-position: center right 10px;
+    max-width: 336px;
+    margin: auto;
+    background-color: rgb(72 72 72 / 95%);
+    border-radius: 10px;
+    padding: 15px 20px;
+    padding-inline-end: 60px;
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff !important;
+    line-height: normal;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+body.arb .share-and-earn-on-subscription-discount-btn a {
+    background-position: center left 10px;
+}
+.share-and-earn-on-subscription-discount-section {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+}
+div#couponModalonPayment .modal-header {
+    padding: 30px 0px;
+}
+div#couponModalonPayment .modal-body .twoBtnEd {
+    display: flex;
+    justify-content: center;
+}
+@media screen and (min-width: 1400px ) {
+    .textBannerSec  h1,
+    .textBannerSec  p
+    {
+        max-width: 1200px;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 1440px) {
+    .contact-info-box {
+        gap: 20px;
+    }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+    .lp-card-content a {
+        padding: 0px 69px !important;
+    }
+    .locationBoxes ul.boxes li {
+        padding: 18px 14px 30px 17px;
+    }
+}
+@media screen and (max-width : 1280px) {
+    .pickNDropStyle .col.colorBg .bigText, .myBookingRow .mBookingDTL .col.colorBg .bigText {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .locationBoxes ul.boxes li {
+        width: calc(33.33% - 7px);
+    }
+}
+@media screen and (max-width: 1199px) {
+    .booking-details-screen {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .contact-info-box {
+        gap: 0;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .social-block .contact-details {
+        margin: -7px 0 0;
+    }
+}
+@media screen and (max-width: 991px) {
+    .fleet  .carsGrid .singleRow {
+        width: 47%;
+    }
+    .contact-info-box {
+        gap: 0;
+    }
+    .book-car .carsGrid {
+        column-gap: 0;
+    }
+    section.bookingSec .carsGrid .singleRow .bookDtlSec .bookPSec .totalRent {
+        padding-right: 20px;
+        padding-left: 10px !important;
+    }
+    .addPaymentSec .PayNowSec button {
+        padding: 0 50px;
+    }
+}
+@media screen and (max-width: 1199px) {
+    .search-new-box .singleRow .bookDtlSec .bookPSec .bookFeature {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .book-car section.bookingSec .singleRow {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    body.fleet .carsGrid {
+        gap: 0;
+    }
+    body.fleet  section.bookingSec .carsGrid.search-new-box .singleRow {
+        padding-right: 0;
+    }
+    .fleet-car-price p:first-child {
+        font-size: 14px !important;
+    }
+}
+@media screen and (max-width: 840px) {
+    .locationBoxes ul.boxes li {
+        width: calc(50% - 7px);
+    }
+}
+@media screen and (max-width: 678px) {
+    .fleet  .carsGrid .singleRow {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 767px) {
+    #PopUpForLoyaltyConfirmation .modal-dialog {
+        margin: 10px;
+    }
+    .addPaymentSec .PayNowSec button {
+        padding: 0 10px;
+    }
+}
+@media screen and (max-width: 640px) {
+    .profile-btns-section {
+        justify-content: center;
+        width: 100%;
+    }
+    .profile .profile-user-name-section {
+        width: 100%;
+    }
+    .btn-share-and-earn-on-subscription-wrapper {
+        top: 320px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .locationBoxes ul.boxes li {
+        width: 100%;
+    }
+
+    .corporate-profile-btns-section {
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 525px) {
+    .addPaymentSec .PayNowSec {
+        flex-direction: column;
+    }
+    .addPaymentSec .PayNowSec input {
+        width: 100%;
+    }
+    .addPaymentSec .PayNowSec button {
+        padding: 10px 16px;
+        width: 100%;
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 480px) {
+    .nav-item-pay-current-balance {
+        margin-bottom: -1px;
+    }
+}
+@media screen and (max-width: 475px) {
+    .social-block .contact-details .tel {
+        letter-spacing: -1.2px;
+    }
+    .peyment-option-text-box .niqatyContent .BtnNtXT,
+    .peyment-option-text-box .qitafContent .BtnNtXT,
+    .peyment-option-text-box .anbArea .BtnNtXT,
+    .peyment-option-text-box .redeemApplySection .BtnNtXT,
+    .peyment-option-text-box .mokafaaArea .BtnNtXT {
+        bottom: -17px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .payment_options_area_div .redeem-options-row-1.section-with-three-option .promoCodeArea,
+    .payment_options_area_div .redeem-options-row-2.section-with-three-option .promoCodeArea {
+        width: 30% !important;
+    }
+    .redeem-options-row-2.section-with-three-option {
+        gap: 10px !important;
+        justify-content: center;
+    }
+}

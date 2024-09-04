@@ -1,0 +1,43 @@
+/*#sidebar_main .submenu_trigger.current_section.act_section > ul {
+    display: block;
+}*/
+
+.jtable-command-column, .jtable-command-column-header{
+    /*display: none !important;*/
+
+}
+
+.jtable-command-column-header.jtable-column-header-selecting{
+    /*display: block !important;*/
+
+}
+
+div.jtable-main-container table.jtable thead th:nth-child(14),
+div.jtable-main-container table.jtable thead th:nth-child(15),
+div.jtable-main-container table.jtable tbody td:nth-child(14),
+div.jtable-main-container table.jtable tbody td:nth-child(15){
+    /*display: none !important;*/
+}
+
+.jtable-child-row {
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.4) inset;
+}
+
+.md-card .md-card-toolbar.add{ height: auto;}
+
+
+.export-booking{
+    display: inline-block;
+}
+
+.btnSecRightEd {
+    padding: 0 0 10px;
+    text-align: right;
+	width:100%;
+}
+
+.btnSecRightEd button.md-btn {  min-width: 148px; }
+
+.btnSecRightEd#importBookingForm {
+    padding-top: 20px ;
+}

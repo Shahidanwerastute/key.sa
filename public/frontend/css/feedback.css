@@ -1,0 +1,266 @@
+/*    CSS for FeedBack Pages    */
+
+.small_630 {
+  margin: 0 auto;
+  max-width: 620px;
+  width: 100%;
+}
+.small_630 header .logoMenuTop {padding-top: 10px; min-height: 66px;}
+header .topHeader .topHleft, body.arb header .topHeader .topHleft {float: left;width: 46%;}
+.small_630 header .topHeader .topLang {position: inherit;width: 54%; text-align: right;}
+header .topHeader .topHleft ul li {color: #fff;}
+footer .footerCopyRight {background-color: #2a2521;}
+header .topHeader .topLang span.website {
+  color: #f8ac1d;
+  font-family: latoregular;
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: inherit;
+}
+header .topHeader .topLang span.website a:hover {color: #fff;}
+.TextBox,
+.carDetails {
+  padding-top: 15px;
+}
+.TextBox h1,
+.carDetails h1 {
+  font-family: 'latobold';
+  font-size: 22px;
+  color: #525252;
+  margin: 0;
+}
+.carDetails h1.title {
+  font-family: 'latoregular';
+  color: #AB1D46;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: normal;
+}
+.TextBox p,
+.carDetails p {
+  color: #858585;
+  font-family: "latoregular";
+  font-size: 12px;
+  line-height: 1.1;
+  margin: 0;
+}
+.carDetails .imgBox {
+  display: block;
+  padding: 15px 0 10px;
+  width: 100%;
+}
+.carDetails p.dated {font-family: 'latobold'; color: #525252}
+.carDetails p.reg_no {color: #A3003F; font-size: 16px;}
+.carDetails .carLocations   {padding: 15px 0;}
+.carDetails .carLocations p {font-size: 13px;color: #444;}
+.carDetails .carLocations p.location {color: #787870;}
+.sandGrayBG {
+  background-color: #eff0e0;
+  color: #535353;
+  font-family: "latobold";
+  font-size: 14px;
+  padding: 10px 0;
+  text-align: center;
+}
+.feedBackFace {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url("../images/feedback_face.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 33px;
+  width: 33px;
+}
+.feedBackFace.vBad     {background-position:   -3px 0;}
+.feedBackFace.bad      {background-position:  -69px 0;}
+.feedBackFace.average  {background-position: -136px 0;}
+.feedBackFace.good     {background-position: -203px 0;}
+.feedBackFace.vGood    {background-position: -270px 0;}
+.emojiList > li.active .feedBackFace.vBad,
+.emojiList > li:hover  .feedBackFace.vBad {background-position:   -3px -41px;}
+.emojiList > li.active .feedBackFace.bad,
+.emojiList > li:hover  .feedBackFace.bad      {background-position:  -69px -41px;}
+.emojiList > li.active .feedBackFace.average,
+.emojiList > li:hover  .feedBackFace.average  {background-position: -136px -41px;}
+.emojiList > li.active .feedBackFace.good,
+.emojiList > li:hover  .feedBackFace.good     {background-position: -203px -41px;}
+.emojiList > li.active .feedBackFace.vGood,
+.emojiList > li:hover  .feedBackFace.vGood    {background-position: -270px -41px;}
+.emojiList {
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.4);
+  font-size: 0;
+  margin: 0 auto 50px;
+  max-width: 362px;
+  overflow: hidden;
+  padding: 0;
+  width: 100%;
+}
+.emojiList > li {
+  color: #444444;
+  display: inline-block;
+  font-family: "latoregular";
+  font-size: 11px;
+  margin: 0;
+  vertical-align: top;
+  width: 18%;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.emojiList > li:first-child {padding-left: 10px; width: 23%;}
+.emojiList > li:last-child  {padding-right: 10px;width: 23%;}©
+                                                             .emojiList > li.active,
+                                                             .emojiList > li:hover {background-color: #f5f5f5;}
+.emojiList > li.active .feedBackFace.vBad + span,
+.emojiList > li:hover  .feedBackFace.vBad + span     {color: #ff4000;}
+.emojiList > li.active .feedBackFace.bad + span,
+.emojiList > li:hover  .feedBackFace.bad + span      {color: #ff8000;}
+.emojiList > li.active .feedBackFace.average + span,
+.emojiList > li:hover  .feedBackFace.average + span  {color: #ffbf00;}
+.emojiList > li.active .feedBackFace.good + span,
+.emojiList > li:hover  .feedBackFace.good + span     {color: #e8f305;}
+.emojiList > li.active .feedBackFace.vGood + span,
+.emojiList > li:hover  .feedBackFace.vGood + span    {color: #6dd900;}
+.emojiList > li a {
+  color: inherit;
+  display: block;
+  margin: 0;
+  text-decoration: none;
+  padding: 10px 0 8px;
+}
+.emojiList > li span {color: inherit; display: block;}
+.emojiCat {
+  display: block;
+  margin: 0 auto;
+  max-width: 450px;
+  width: 100%;
+}
+.emojiCat button.edBtn {
+  border: 0 none;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  float: none;
+  font-family: "latobold";
+  font-size: 14px;
+  line-height: 1.2;
+  margin: 0 10px 14px;
+  min-height: 46px;
+  min-width: 173px;
+  padding: 10px;
+  vertical-align: top;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.emojiCat button.yellowish {background-color: #f79704;}
+.emojiCat button.edBtn:hover {background-color: #2a2521 !important;}
+.small_630 .footerCopyRight .container {max-width: 100%;}
+.TextBox {padding: 20px 0 15px;}
+.TextBox p {
+  color: #525252;
+  font-family: "latobold";
+  font-size: 16px;
+  margin-top: 10px;
+}
+.reviewList {
+  display: block;
+  font-size: 0;
+  list-style: outside none none;
+  margin: 0 auto 10px;
+  max-width: 380px;
+  padding: 0;
+}
+.reviewList > li {
+  color: #535353;
+  display: inline-block;
+  font-family: "latoregular";
+  font-size: 17px;
+  font-weight: normal;
+  margin: 0 0 5px;
+  padding-right: 15px;
+  text-align: left;
+  vertical-align: top;
+  width: 49.5%;
+}
+.reviewList > li label {
+  color: inherit;
+  font-size: inherit;
+  font-weight: normal;
+}
+.textBox > input {
+  border: 0 none;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.3);
+  color: #c5c5c5;
+  font-family: "latoregular";
+  font-size: 17px;
+  font-weight: normal;
+  height: 44px;
+  margin: 0 auto 20px;
+  max-width: 520px;
+  width: 100%;
+}
+.textBox > input::-webkit-input-placeholder {text-transform: inherit; }
+.textBox > input:-moz-placeholder {text-transform: inherit; }
+.textBox > input::-moz-placeholder {text-transform: inherit; }
+.textBox > input:-ms-input-placeholder {text-transform: inherit; }
+
+.reviewList input[type="radio"] {display: none;}
+.reviewList input[type="radio"]:not(old) + label {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  display: block;
+  margin: 0;
+  padding-left: 36px;
+  position: relative;
+  width: 100%;
+}
+.reviewList input[type="radio"]:not(old) + label:before{
+  border: 2px solid #535353;
+  border-radius: 50%;
+  content: "";
+  height: 25px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 25px;
+}
+.reviewList input[type="radio"]:not(old) + label:after {
+  border: 3px solid #fff;
+  border-radius: 50%;
+  content: "";
+  display: none;
+  height: 21px;
+  left: 2px;
+  position: absolute;
+  top: 2px;
+  width: 21px;
+}
+.reviewList input[type="radio"]:checked:not(old) + label:before {background-color: #f79704;}
+.reviewList input[type="radio"]:checked:not(old) + label:after {display: block;}
+
+/*    Arabic CSS starts     */
+body.arb header .topHeader .topHleft {float: right;}
+body.arb header .topHeader .topLang {text-align: left;}
+body.arb .col-sm-offset-1 {
+  margin-left: 0;
+  margin-right: 8.33333%;
+}
+body.arb .reviewList input[type="radio"]:not(old) + label:before  {left: auto;right: 0;}
+body.arb .reviewList input[type="radio"]:not(old) + label:after   {left:auto; right: 2px;}
+body.arb .reviewList input[type="radio"]:not(old) + label {padding-left: 0;padding-right: 36px; text-align: right;}
+body.arb .TextBox h1.heading img, body.arb .carDetails h1.heading img {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
